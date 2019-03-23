@@ -1,0 +1,16 @@
+package com.jon.web.JavaBelt.repositories;
+
+import java.util.List;
+
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+import com.jon.web.JavaBelt.models.Idea;
+
+@Repository
+public interface IdeaRepository extends CrudRepository<Idea, Long>{
+
+	List<Idea> findAll();
+
+
+}
